@@ -1,3 +1,4 @@
+// إرسال الرسالة
 function sendMessage() {
     const input = document.getElementById("message");
     const message = input.value;
@@ -19,6 +20,7 @@ function sendMessage() {
     input.value = "";
 }
 
+// إضافة الرسالة في صندوق الدردشة
 function addMessage(text, type) {
     const chatBox = document.getElementById("chat-box");
 
@@ -29,14 +31,19 @@ function addMessage(text, type) {
     chatBox.appendChild(div);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+// مسح المحادثة الحالية
 function newChat() {
     document.getElementById("chat-box").innerHTML = "";
 }
 
+// توجيه المستخدم لصفحة تسجيل الدخول
 function goLogin() {
-    alert("صفحة تسجيل الدخول قريبًا");
+    // افتح صفحة تسجيل الدخول عند توفرها
+    window.location.href = "/login";
 }
 
+// توجيه المستخدم لصفحة إنشاء الحساب
 function goRegister() {
-    alert("صفحة إنشاء حساب قريبًا");
+    window.location.href = "/register";
 }
