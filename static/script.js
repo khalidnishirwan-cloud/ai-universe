@@ -29,3 +29,14 @@ function addMessage(text, type) {
     chatBox.appendChild(div);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+function newChat() {
+    document.getElementById("chat-box").innerHTML = "";
+}
+
+function goLogin() {
+    alert("صفحة تسجيل الدخول قريبًا");
+}
+
+function goRegister() {
+    alert("صفحة إنشاء حساب قريبًا");
+}
